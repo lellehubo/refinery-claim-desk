@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Claim Desk</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+:root{
+  --bg:#0b1220; --panel:#121a2b; --panel2:#18223a; --line:#24304a; --text:#e8edf5; --muted:#9aa7bd;
+  --both:#2dd4bf; --corr:#60a5fa; --single:#fbbf24; --tracker:#a78bfa; --unclear:#f472b6; --accent:#38bdf8;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text);font-family:Jost,system-ui,sans-serif;font-size:17px;line-height:1.45}
+a{color:var(--accent)}
+header{padding:18px 24px 10px}
+h1{margin:0;font-size:32px;font-weight:700;letter-spacing:.2px}
+.sub{color:var(--muted);font-size:15px;margin-top:2px}
+.bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:6px 24px 14px}
+.count{display:flex;align-items:center;gap:8px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:7px 12px;cursor:pointer;user-select:none}
+.count b{font-size:20px}
+.count.off{opacity:.35}
+.dot{width:12px;height:12px;border-radius:50%;display:inline-block;flex:none}
+.toggle{display:flex;align-items:center;gap:6px;color:var(--muted);font-size:15px;margin-left:6px;cursor:pointer}
+.toggle input{accent-color:var(--accent);width:17px;height:17px}
+main{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:16px;padding:0 24px 16px;height:calc(100vh - 190px);min-height:560px}
+#map{border-radius:12px;border:1px solid var(--line);background:#0e1626;height:100%}
+#map.failed{display:flex;align-items:center;justify-content:center;color:var(--muted)}
+#side{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:auto;height:100%}
+table{width:100%;border-collapse:collapse}
+th{position:sticky;top:0;background:var(--panel2);text-align:left;font-weight:500;color:var(--muted);font-size:14px;padding:9px 10px;z-index:1}
+td{padding:9px 10px;border-top:1px solid var(--line);vertical-align:top}
+tr.ev{cursor:pointer}
+tr.ev:hover{background:var(--panel2)}
+tr.ev.sel{background:#1d2a47}
+.fac{font-weight:500}
+.reg{color:var(--muted);font-size:14px}
+.chip{display:inline-block;border-radius:999px;padding:1px 10px;font-size:14px;font-weight:600;color:#0b1220;white-space:nowrap}
+.tag{display:inline-block;border:1px solid var(--line);border-radius:6px;padding:0 6px;font-size:13px;color:var(--muted);margin:2px 4px 0 0;white-space:nowrap}
+.tag.heat{border-color:#f59e0b;color:#fcd34d}
+.star{color:var(--accent);font-size:13px}
+.num{color:var(--muted);font-size:14px;white-space:nowrap}
+#detail{padding:16px 18px}
+.back{background:none;border:1px solid var(--line);color:var(--text);border-radius:8px;padding:4px 12px;font:inherit;font-size:15px;cursor:pointer}
+#detail h2{margin:12px 0 2px;font-size:24px}
+.why{color:var(--muted);margin:6px 0 10px;font-size:15px}
+.box{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:10px 0}
+.box h3{margin:0 0 6px;font-size:15px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.6px}
+svg text{font-family:Jost,sans-serif}
+.claim{border-top:1px solid var(--line);padding:9px 0}
+.claim .meta{font-size:14px;color:var(--muted)}
+.claim .who{font-weight:600;color:var(--text)}
+.q{margin:4px 0 0}
+.tr{color:var(--muted);font-size:15px;margin-top:2px}
+.tr i{font-style:normal;font-size:12px;border:1px solid var(--line);border-radius:4px;padding:0 4px;margin-right:6px}
+mark{background:#f59e0b33;color:#fde68a;border-bottom:2px dotted #f59e0b;padding:0 2px;border-radius:3px;cursor:help}
+.pub{font-size:16px}
+.copy{margin-top:8px;background:var(--accent);color:#0b1220;border:0;border-radius:8px;padding:6px 14px;font:inherit;font-weight:600;cursor:pointer}
+footer{padding:0 24px 22px;color:var(--muted);font-size:14px}
+footer b{color:var(--text);font-weight:500}
+.leaflet-container{background:#0e1626;font-family:Jost,sans-serif}
+.leaflet-popup-content-wrapper,.leaflet-popup-tip{background:var(--panel2);color:var(--text)}
+@media (max-width:900px){
+  main{grid-template-columns:1fr;height:auto}
+  #map{height:52vh}
+  #side{height:auto;max-height:none}
+  header,.bar,main,footer{padding-left:16px;padding-right:16px}
+  h1{font-size:26px}
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>The Claim Desk</h1>
+  <div class="sub">Strikes on Russian oil infrastructure, 21 Apr to 21 Oct 2026 · Built live with Claude Code · Public sources only</div>
+</header>
+<div class="bar" id="bar"></div>
+<main>
+  <div id="map"></div>
+  <div id="side"></div>
+</main>
+<footer>
+  <b>Every row is a claim, not a fact. Status reflects independent origins, not volume.</b><br>
+  Detail period 21 Apr to 21 Oct 2026. Posts come from a Meltwater sample from 1 Jun (a selection, not everything); April and May rows rely on public trackers only.
+  Russian governors' own channels are not indexed, so their words appear only as relayed by others. Some strikes are reported without dates and cannot be shown.
+  Quotes are shortened. Translations by Claude.
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+const BASE = location.pathname.includes('/fallback/') ? '../data/' : 'data/';
+const STATUS = {
+  'Both sides':     {c:'var(--both)', hex:'#2dd4bf', why:'Ukrainian officials and Russian officials both describe an attack.'},
+  'Corroborated':   {c:'var(--corr)', hex:'#60a5fa', why:'Two or more independent origins.'},
+  'Single origin':  {c:'var(--single)', hex:'#fbbf24', why:'Everything traces back to one origin.'},
+  'Tracker only':   {c:'var(--tracker)', hex:'#a78bfa', why:'Listed by public trackers; no primary posts in our sample.'},
+  'Target unclear': {c:'var(--unclear)', hex:'#f472b6', why:'An attack is reported, but the site is not identified.'},
+};
+const ORIGIN = {
+  ua_official:'Ukrainian official', ru_official:'Russian official (relayed)', ru_channel:'Russian channel',
+  monitoring:'Monitoring channel', independent_media:'Independent media', industry:'Reuters / industry sources'
+};
+const LANES = ['monitoring','ua_official','ru_official','ru_channel','independent_media','industry'];
+const GLOSS = [
+  [/промзон|промышленн\w* зон/i,'"industrial zone": names an area, not the refinery'],
+  [/промышленн\w* (объект|инфраструктур)/i,'"industrial facility / infrastructure": avoids saying what was hit'],
+  [/обломк/i,'"debris": implies the drone was shot down and only fragments fell'],
+  [/возгорани/i,'"ignition": a softer word than "fire" (пожар)'],
+  [/предприяти/i,'"enterprise": an unnamed company'],
+  [/гражданской инфраструктуры/i,'"civilian infrastructure": does not say oil'],
+  [/объект/i,'"facility / object": unspecified'],
+];
+const S = {sel:null, hide:new Set(), refOnly:false, earlier:true};
+let F={}, EV=[], CL={}, HEAT=[], map=null, layers={};
+
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmtDate = d => new Date(d+'T12:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'});
+
+function origin(c){ if(c.cites) return c.cites; if(c.sender_type==='ru_official') return 'ru_channel'; return c.sender_type; }
+function analyse(e){
+  const all = CL[e.id]||[], f = F[e.facility_id];
+  const use = all.some(c=>!c.uncertain_match) ? all.filter(c=>!c.uncertain_match) : all;
+  const o = new Set(use.map(origin));
+  const g = new Set([...o].map(x => (x==='ru_official'||x==='ru_channel') ? 'russia' : x));
+  let st;
+  if(f.type==='unidentified') st='Target unclear';
+  else if(o.has('ua_official') && o.has('ru_official')) st='Both sides';
+  else if(g.size>=2) st='Corroborated';
+  else if(g.size===1) st='Single origin';
+  else st='Tracker only';
+  const tags=[];
+  if(f.type!=='refinery' && f.type!=='unidentified') tags.push('Not a refinery');
+  if(f.indistinguishable_from) tags.push('Cannot tell from neighbour');
+  if(e.date_doubtful) tags.push('Date doubtful');
+  if(o.has('industry') || (e.secondary_sources||[]).some(s=>s.damage)) tags.push('Outage reported');
+  if(f.coord_quality==='region') tags.push('Location approximate');
+  const near = h => h.facility_id===e.facility_id && new Date(h.start)-864e5 <= new Date(e.date) && new Date(h.end)+864e5 >= new Date(e.date);
+  const heat = HEAT.find(h => near(h) && h.flag==='strong');
+  const flare = !heat && HEAT.find(h => near(h) && h.flag!=='strong');
+  return {status:st, origins:o, groups:g, n:all.length, tags, heat, flare};
+}
+
+async function load(n){ try{ const r=await fetch(BASE+n); if(!r.ok) throw 0; return await r.json(); }catch(_){ return null; } }
+
+(async function(){
+  const [fa, ev, cl, fi] = await Promise.all([load('facilities.json'),load('events.json'),load('claims.json'),load('firms.json')]);
+  if(!fa||!ev||!cl){ document.getElementById('side').innerHTML='<p style="padding:16px">Could not load data. Serve the folder over http (not file://).</p>'; return; }
+  fa.facilities.forEach(f=>F[f.id]=f);
+  cl.claims.forEach(c=>(CL[c.event_id] ||= []).push(c));
+  Object.values(CL).forEach(a=>a.sort((x,y)=>x.time_utc.localeCompare(y.time_utc)));
+  HEAT = (fi && fi.anomalies) || [];
+  EV = ev.events.map(e=>({...e, ...analyse(e)}));
+  buildMap(); render();
+})();
+
+function visible(){
+  return EV.filter(e => e.period==='recent' && !S.hide.has(e.status) && (!S.refOnly || F[e.facility_id].type==='refinery'))
+           .sort((a,b)=>b.date.localeCompare(a.date));
+}
+
+function renderBar(){
+  const rec = EV.filter(e=>e.period==='recent' && (!S.refOnly || F[e.facility_id].type==='refinery'));
+  let h = Object.keys(STATUS).map(s=>{
+    const n = rec.filter(e=>e.status===s).length;
+    return `<div class="count ${S.hide.has(s)?'off':''}" data-s="${s}"><span class="dot" style="background:${STATUS[s].c}"></span><b>${n}</b> ${s}</div>`;
+  }).join('');
+  h += `<label class="toggle"><input type="checkbox" id="ref" ${S.refOnly?'checked':''}> Refineries only</label>`;
+  h += `<label class="toggle"><input type="checkbox" id="old" ${S.earlier?'checked':''}> Show earlier strikes (2022 to Apr 2026)</label>`;
+  const bar = document.getElementById('bar'); bar.innerHTML = h;
+  bar.querySelectorAll('.count').forEach(el=>el.onclick=()=>{ const s=el.dataset.s; S.hide.has(s)?S.hide.delete(s):S.hide.add(s); render(); });
+  bar.querySelector('#ref').onchange=ev=>{ S.refOnly=ev.target.checked; render(); };
+  bar.querySelector('#old').onchange=ev=>{ S.earlier=ev.target.checked; render(); };
+}
+
+function tagHtml(e){
+  let t = e.tags.map(x=>`<span class="tag">${x}</span>`).join('');
+  if(e.heat) t += `<span class="tag heat">Heat anomaly</span>`;
+  else if(e.flare) t += `<span class="tag">Flare spike</span>`;
+  return t;
+}
+
+function renderList(){
+  const rows = visible();
+  document.getElementById('side').innerHTML = `<table><thead><tr><th>Date</th><th>Site</th><th>Status</th><th>Origins</th></tr></thead><tbody>${
+    rows.map(e=>{ const f=F[e.facility_id];
+      return `<tr class="ev" data-id="${e.id}"><td class="num">${fmtDate(e.date)}</td>
+        <td><div class="fac">${esc(f.name)} ${e.featured?'<span class="star" title="Full claim trail">●</span>':''}</div><div class="reg">${esc(f.region)}</div>${tagHtml(e)}</td>
+        <td><span class="chip" style="background:${STATUS[e.status].c}">${e.status}</span></td>
+        <td class="num">${e.groups.size} from ${e.n} posts</td></tr>`;}).join('')
+  }</tbody></table>`;
+  document.querySelectorAll('tr.ev').forEach(tr=>tr.onclick=()=>select(tr.dataset.id));
+}
+
+function buildMap(){
+  if(typeof L==='undefined'){ const m=document.getElementById('map'); m.classList.add('failed'); m.textContent='Map unavailable. The list works without it.'; return; }
+  map = L.map('map',{zoomControl:true, attributionControl:true}).setView([54,50],4);
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{subdomains:'abcd',maxZoom:12,
+    attribution:'&copy; OpenStreetMap &copy; CARTO'}).addTo(map);
+  layers.old = L.layerGroup().addTo(map); layers.heat = L.layerGroup().addTo(map); layers.rec = L.layerGroup().addTo(map);
+}
+
+function renderMap(){
+  if(!map) return;
+  layers.old.clearLayers(); layers.rec.clearLayers(); layers.heat.clearLayers();
+  HEAT.filter(h=>h.flag==='strong').forEach(h=>{ const f=F[h.facility_id]; if(!f||f.lat==null) return;
+    const rep = EV.some(e=>e.period==='recent' && e.facility_id===h.facility_id && Math.abs((new Date(h.date)-new Date(e.date))/864e5)<=2);
+    if(rep) return;
+    L.circleMarker([f.lat,f.lon],{radius:13,color:'#f59e0b',weight:2,dashArray:'4 4',fill:false})
+      .bindTooltip(`<b>${esc(f.name)}</b><br>Satellite heat anomaly ${fmtDate(h.date)}<br>No strike reported in our data${f.control_group?' (control group site)':''}`).addTo(layers.heat); });
+  if(S.earlier) EV.filter(e=>e.period==='earlier').forEach(e=>{ const f=F[e.facility_id]; if(f.lat==null) return;
+    L.circleMarker([f.lat,f.lon],{radius:2.5,weight:0,fillColor:'#7c8db0',fillOpacity:.35,interactive:true})
+      .bindTooltip(`${esc(f.name)}, ${fmtDate(e.date)} (earlier)`).addTo(layers.old); });
+  const byFac = {};
+  visible().forEach(e=>{ const f=F[e.facility_id]; if(f.lat==null) return; (byFac[f.id] ||= []).push(e); });
+  Object.entries(byFac).forEach(([fid, list])=>{
+    const f=F[fid]; const order=Object.keys(STATUS);
+    const best = list.slice().sort((a,b)=>order.indexOf(a.status)-order.indexOf(b.status))[0];
+    const sel = list.some(e=>e.id===S.sel);
+    const m = L.circleMarker([f.lat,f.lon],{radius:6+Math.min(12,Math.sqrt(list.reduce((s,e)=>s+e.n,0))*2),
+      color: sel?'#ffffff':STATUS[best.status].hex, weight: sel?3:1.5, fillColor:STATUS[best.status].hex, fillOpacity:.55});
+    m.bindTooltip(`<b>${esc(f.name)}</b><br>${list.length} strike${list.length>1?'s':''} in the period`);
+    m.on('click',()=>select(list[0].id));
+    m.addTo(layers.rec);
+  });
+}
+
+function render(){
+  renderBar(); renderMap();
+  if(S.sel) renderDetail(); else renderList();
+}
+
+function select(id){
+  S.sel=id; renderMap(); renderDetail();
+  const e=EV.find(x=>x.id===id), f=F[e.facility_id];
+  if(map && f.lat!=null) map.flyTo([f.lat,f.lon], Math.max(map.getZoom(),6), {duration:.6});
+}
+
+function lensify(q, terms){
+  let h = esc(q);
+  (terms||[]).slice().sort((a,b)=>b.length-a.length).forEach(t=>{
+    const g = GLOSS.find(([re])=>re.test(t)); const tip = g ? g[1] : 'vague wording';
+    h = h.split(esc(t)).join(`<mark title="${esc(tip)}">${esc(t)}</mark>`);
+  });
+  return h;
+}
+
+function hoursFrom(t0, t){ return (new Date(t)-new Date(t0))/36e5; }
+
+function trailSvg(claims){
+  const rel = claims.filter(c=>c.time_reliable);
+  if(!claims.length) return '';
+  const t0 = (rel[0]||claims[0]).time_utc;
+  const lanes = LANES.filter(l=>claims.some(c=>origin(c)===l));
+  const maxH = Math.max(12, ...claims.map(c=>hoursFrom(t0,c.time_utc)));
+  const W=620, L0=170, R=20, H=34*lanes.length+34;
+  const x = h => L0 + Math.max(0,h)/maxH*(W-L0-R);
+  let s = `<svg viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="Claim trail">`;
+  const ticks = maxH<=24 ? [0,6,12,18,24] : maxH<=48 ? [0,12,24,36,48] : [0,24,48,72];
+  ticks.filter(t=>t<=maxH).forEach(t=>{ s+=`<line x1="${x(t)}" y1="8" x2="${x(t)}" y2="${H-24}" stroke="#24304a"/><text x="${x(t)}" y="${H-6}" fill="#9aa7bd" font-size="12" text-anchor="middle">+${t}h</text>`; });
+  lanes.forEach((l,i)=>{
+    const y=24+i*34;
+    s+=`<text x="0" y="${y+4}" fill="#e8edf5" font-size="13">${ORIGIN[l]}</text><line x1="${L0}" y1="${y}" x2="${W-R}" y2="${y}" stroke="#24304a" stroke-dasharray="2 4"/>`;
+    claims.filter(c=>origin(c)===l).forEach(c=>{
+      const h=hoursFrom(t0,c.time_utc);
+      s+=`<circle cx="${x(h)}" cy="${y}" r="7" fill="${c.time_reliable?'#38bdf8':'none'}" stroke="#38bdf8" stroke-width="2"><title>${esc(c.sender)} · +${h.toFixed(1)}h${c.time_reliable?'':' (time approx.)'}</title></circle>`;
+    });
+  });
+  return s+'</svg>';
+}
+
+function pubLine(e){
+  const f=F[e.facility_id], cl=(CL[e.id]||[]).filter(c=>!c.uncertain_match);
+  const ua=[...new Set(cl.filter(c=>origin(c)==='ua_official').map(c=>/Zelensk/i.test(c.sender)?'President Zelensky':/Генштаб|Генеральн/i.test(c.sender)?"Ukraine's General Staff":c.sender))];
+  const score=c=>(c.lens_terms||[]).length+(/refiner|НПЗ|terminal|нефт/i.test((c.quote_en||'')+c.quote)?2:0);
+  const ru=cl.filter(c=>origin(c)==='ru_official' && c.quote).sort((a,b)=>score(b)-score(a))[0];
+  const ind=cl.some(c=>origin(c)==='industry');
+  const nm = /refinery/i.test(f.name) ? f.name : /\(/.test(f.name) ? f.name.replace(/\s*\((.+)\)$/,' refinery in $1') : f.name+' refinery';
+  const where = f.type==='unidentified' ? `an unidentified oil site in ${f.region}` : f.type==='refinery' ? `the ${nm}` : `the ${f.name} (${f.type}, not a refinery)`;
+  const PL={ua_official:'Ukrainian officials',russia:'Russian officials and channels',monitoring:'monitoring channels',independent_media:'independent media',industry:'industry sources'};
+  const list=a=>a.length>1?a.slice(0,-1).join(', ')+' and '+a.at(-1):a[0];
+  const q=s=>`"${String(s).replace(/[.\s]+$/,'')}."`;
+  let t='';
+  if(ua.length) t+=`According to ${ua.join(' and ')}, ${where} was hit on ${fmtDate(e.date)}.`;
+  else t+=`On ${fmtDate(e.date)}, an attack on ${where} was reported by ${e.groups.size?list([...e.groups].map(g=>PL[g])):'public trackers'}.`;
+  if(ru) t+=` A Russian official statement, as relayed on ${ru.platform}, read: ${q(ru.quote_en||ru.quote)}`;
+  else if(ua.length) t+=` Russian officials did not confirm a strike on the site in the sources we checked.`;
+  if(!ua.length && ru) t+=` Ukraine has not claimed it in the sources we checked.`;
+  t+= ind ? ` Industry sources cited by Reuters reported a halt in processing.` : ` The extent of any damage has not been independently confirmed.`;
+  return t.replace(/""/g,'"');
+}
+
+function renderDetail(){
+  const e=EV.find(x=>x.id===S.sel), f=F[e.facility_id], cl=CL[e.id]||[];
+  const rel=cl.filter(c=>c.time_reliable), t0=(rel[0]||cl[0]||{}).time_utc;
+  let h=`<div id="detail"><button class="back" id="back">← All strikes</button>
+    <h2>${esc(f.name)}</h2>
+    <div>${fmtDate(e.date)} · ${esc(f.region)} ${f.capacity_mt_yr?`· ${f.capacity_mt_yr} Mt/yr`:''}</div>
+    <div style="margin-top:8px"><span class="chip" style="background:${STATUS[e.status].c}">${e.status}</span> ${tagHtml(e)}</div>
+    <div class="why">${STATUS[e.status].why} ${e.n?`${e.n} posts, ${e.groups.size} independent origin group${e.groups.size===1?'':'s'}: ${[...e.groups].map(g=>g==='russia'?'Russian side (officials and channels)':ORIGIN[g]).join(', ')}.`:''}</div>`;
+  if(e.flare && !e.heat) h+=`<div class="box"><h3>Satellite</h3>Intensity spike at known flare locations on ${fmtDate(e.flare.date)} (NASA FIRMS). ${esc(e.flare.note)} Not a fire signal on its own.</div>`;
+  if(HEAT.length && !e.heat && !e.flare && F[e.facility_id].lat!=null) h+=`<div class="box"><h3>Satellite</h3>No heat anomaly detected around this date. Clouds, smoke or satellite timing can hide a fire, so this is not evidence that nothing happened.</div>`;
+  if(e.heat) h+=`<div class="box"><h3>Satellite</h3>Satellite heat anomaly consistent with fire (NASA FIRMS, VIIRS 375 m) on ${fmtDate(e.heat.date)}${e.heat.max_frp_mw?`, peak ${Math.round(e.heat.max_frp_mw)} MW`:''}${e.heat.days>1?`, lasting ${e.heat.days} days`:''}. ${esc(e.heat.note||'')} Not proof of a strike.</div>`;
+  if(cl.length){
+    h+=`<div class="box"><h3>Claim trail</h3>${trailSvg(cl)}<div class="reg">Hours from the first Telegram or X post. Hollow dots: news-site time, approximate.</div></div>`;
+    h+=`<div class="box"><h3>Publication line</h3><div class="pub" id="pub">${esc(pubLine(e))}</div><button class="copy" id="copy">Copy line</button></div>`;
+    h+=`<div class="box"><h3>Posts (${cl.length})</h3>`+cl.map(c=>{
+      const hrs=t0?hoursFrom(t0,c.time_utc):0;
+      return `<div class="claim"><div class="meta"><span class="who">${esc(c.sender)}</span> · ${c.sender_type==='ru_official'?'Russian channel':ORIGIN[c.sender_type]}${c.cites?`, relaying ${c.cites==='ru_official'?'a Russian official':'a Ukrainian official'}`:''} · ${c.platform} · ${c.time_utc.slice(0,16).replace('T',' ')} UTC · +${hrs.toFixed(1)}h${c.time_reliable?'':' (time approx.)'}${c.uncertain_match?' · match uncertain':''}${c.url?` · <a href="${esc(c.url)}" target="_blank" rel="noopener">open</a>`:''}</div>
+        ${c.quote?`<div class="q">${lensify(c.quote,c.lens_terms)}</div>${c.quote_en?`<div class="tr"><i>Translation</i>${esc(c.quote_en)}</div>`:''}`:''}</div>`;}).join('')+`</div>`;
+  }
+  if((e.secondary_sources||[]).length) h+=`<div class="box"><h3>Listed by trackers</h3>${e.secondary_sources.map(s=>`<div>${s.url?`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>`:esc(s.name)}${s.partisan?' <span class="tag">partisan source</span>':''}${s.damage?` <span class="tag">source says: ${esc(s.damage)}</span>`:''}</div>`).join('')}</div>`;
+  (e.notes||[]).forEach(n=>h+=`<div class="why">${esc(n)}</div>`);
+  h+='</div>';
+  const side=document.getElementById('side'); side.innerHTML=h; side.scrollTop=0;
+  document.getElementById('back').onclick=()=>{ S.sel=null; render(); };
+  const cp=document.getElementById('copy'); if(cp) cp.onclick=()=>{ navigator.clipboard?.writeText(document.getElementById('pub').textContent); cp.textContent='Copied'; };
+}
+</script>
+</body>
+</html>

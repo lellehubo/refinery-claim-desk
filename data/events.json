@@ -1,0 +1,3611 @@
+{
+ "meta": {
+  "generated": "2026-10-21",
+  "period_detail_from": "2026-04-21",
+  "period_detail_to": "2026-10-21",
+  "sources": [
+   "Supabase export raff_reported_strikes (Wikipedia Deep strike campaign, Caspian Policy Center map, single reports)",
+   "Meltwater sample 1 Jun to 21 Oct 2026 (Telegram, X, news), metadata and short quotes only"
+  ],
+  "note": "Every row is a claim, not a fact. Translations by Claude, marked as translations."
+ },
+ "events": [
+  {
+   "id": "2022-06-22-novoshakhtinsk",
+   "date": "2022-06-22",
+   "facility_id": "novoshakhtinsk",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Reuters (via registret)",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2023-05-01-ilsky",
+   "date": "2023-05-01",
+   "facility_id": "ilsky",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign) / Kyiv Independent",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-01-11-taneco",
+   "date": "2024-01-11",
+   "facility_id": "taneco",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-01-13-saratov",
+   "date": "2024-01-13",
+   "facility_id": "saratov",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-01-17-ryazan",
+   "date": "2024-01-17",
+   "facility_id": "ryazan",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-01-18-petersburg-oil-terminal",
+   "date": "2024-01-18",
+   "facility_id": "petersburg-oil-terminal",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-01-21-ust-luga",
+   "date": "2024-01-21",
+   "facility_id": "ust-luga",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-01-24-tuapse",
+   "date": "2024-01-24",
+   "facility_id": "tuapse",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign); Caspian Policy Center",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-01-29-yaroslavl-yanos",
+   "date": "2024-01-29",
+   "facility_id": "yaroslavl-yanos",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "ingen skada"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-01-31-nevsky-mazut",
+   "date": "2024-01-31",
+   "facility_id": "nevsky-mazut",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-02-03-volgograd",
+   "date": "2024-02-03",
+   "facility_id": "volgograd",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-02-09-afipsky",
+   "date": "2024-02-09",
+   "facility_id": "afipsky",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "obekräftad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-02-09-ilsky",
+   "date": "2024-02-09",
+   "facility_id": "ilsky",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-02-09-stalnoy-kon",
+   "date": "2024-02-09",
+   "facility_id": "stalnoy-kon",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "obekräftad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-03-01-kirishi",
+   "date": "2024-03-01",
+   "facility_id": "kirishi",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-03-12-kstovo-norsi",
+   "date": "2024-03-12",
+   "facility_id": "kstovo-norsi",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-03-13-novoshakhtinsk",
+   "date": "2024-03-13",
+   "facility_id": "novoshakhtinsk",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-03-13-ryazan",
+   "date": "2024-03-13",
+   "facility_id": "ryazan",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-03-15-pervyy-zavod",
+   "date": "2024-03-15",
+   "facility_id": "pervyy-zavod",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-03-16-kuibyshev",
+   "date": "2024-03-16",
+   "facility_id": "kuibyshev",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-03-16-novokuibyshevsk",
+   "date": "2024-03-16",
+   "facility_id": "novokuibyshevsk",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-03-16-slavyansk",
+   "date": "2024-03-16",
+   "facility_id": "slavyansk",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-03-16-syzran",
+   "date": "2024-03-16",
+   "facility_id": "syzran",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-03-22-kuibyshev",
+   "date": "2024-03-22",
+   "facility_id": "kuibyshev",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-04-02-taneco",
+   "date": "2024-04-02",
+   "facility_id": "taneco",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-04-26-ilsky",
+   "date": "2024-04-26",
+   "facility_id": "ilsky",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-04-26-slavyansk",
+   "date": "2024-04-26",
+   "facility_id": "slavyansk",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-04-30-ryazan",
+   "date": "2024-04-30",
+   "facility_id": "ryazan",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-05-09-pervyy-zavod",
+   "date": "2024-05-09",
+   "facility_id": "pervyy-zavod",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-05-09-salavat",
+   "date": "2024-05-09",
+   "facility_id": "salavat",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign); Caspian Policy Center",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-05-10-volgograd",
+   "date": "2024-05-10",
+   "facility_id": "volgograd",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-05-16-tuapse",
+   "date": "2024-05-16",
+   "facility_id": "tuapse",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center; Wikipedia (Deep strike campaign)",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-05-17-novorossiysk-noft",
+   "date": "2024-05-17",
+   "facility_id": "novorossiysk-noft",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-05-17-sheskharis",
+   "date": "2024-05-17",
+   "facility_id": "sheskharis",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-05-18-slavyansk",
+   "date": "2024-05-18",
+   "facility_id": "slavyansk",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-05-23-taif-nk",
+   "date": "2024-05-23",
+   "facility_id": "taif-nk",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "obekräftad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-05-23-taneco",
+   "date": "2024-05-23",
+   "facility_id": "taneco",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "obekräftad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-06-05-novoshakhtinsk",
+   "date": "2024-06-05",
+   "facility_id": "novoshakhtinsk",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-06-13-taman",
+   "date": "2024-06-13",
+   "facility_id": "taman",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-06-19-afipsky",
+   "date": "2024-06-19",
+   "facility_id": "afipsky",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "obekräftad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-06-20-astrakhan-gpz",
+   "date": "2024-06-20",
+   "facility_id": "astrakhan-gpz",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "obekräftad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-06-20-ilsky",
+   "date": "2024-06-20",
+   "facility_id": "ilsky",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "obekräftad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-06-20-krasnodar",
+   "date": "2024-06-20",
+   "facility_id": "krasnodar",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "obekräftad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-07-04-novoshakhtinsk",
+   "date": "2024-07-04",
+   "facility_id": "novoshakhtinsk",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-07-22-tuapse",
+   "date": "2024-07-22",
+   "facility_id": "tuapse",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign); Caspian Policy Center",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-07-26-ryazan",
+   "date": "2024-07-26",
+   "facility_id": "ryazan",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "obekräftad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-08-03-atlas-refinery",
+   "date": "2024-08-03",
+   "facility_id": "atlas-refinery",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "obekräftad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-08-21-novoshakhtinsk",
+   "date": "2024-08-21",
+   "facility_id": "novoshakhtinsk",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-08-27-atlas-refinery",
+   "date": "2024-08-27",
+   "facility_id": "atlas-refinery",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-08-31-moskva-kapotnya",
+   "date": "2024-08-31",
+   "facility_id": "moskva-kapotnya",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-10-31-ufimsky",
+   "date": "2024-10-31",
+   "facility_id": "ufimsky",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2024-12-18-novoshakhtinsk",
+   "date": "2024-12-18",
+   "facility_id": "novoshakhtinsk",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-01-11-taneco",
+   "date": "2025-01-11",
+   "facility_id": "taneco",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "obekräftad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-01-23-ryazan",
+   "date": "2025-01-23",
+   "facility_id": "ryazan",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center; Wikipedia (Deep strike campaign)",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-01-25-ryazan",
+   "date": "2025-01-25",
+   "facility_id": "ryazan",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-01-28-kstovo-norsi",
+   "date": "2025-01-28",
+   "facility_id": "kstovo-norsi",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-01-30-volgograd",
+   "date": "2025-01-30",
+   "facility_id": "volgograd",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-02-02-volgograd",
+   "date": "2025-02-02",
+   "facility_id": "volgograd",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-02-10-afipsky",
+   "date": "2025-02-10",
+   "facility_id": "afipsky",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign); Caspian Policy Center",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": "obekräftad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-02-10-saratov",
+   "date": "2025-02-10",
+   "facility_id": "saratov",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-02-17-ilsky",
+   "date": "2025-02-17",
+   "facility_id": "ilsky",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "obekräftad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-02-18-syzran",
+   "date": "2025-02-18",
+   "facility_id": "syzran",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-02-20-ryazan",
+   "date": "2025-02-20",
+   "facility_id": "ryazan",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-02-23-ryazan",
+   "date": "2025-02-23",
+   "facility_id": "ryazan",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-02-27-ilsky",
+   "date": "2025-02-27",
+   "facility_id": "ilsky",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "obekräftad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-03-03-ufimsky",
+   "date": "2025-03-03",
+   "facility_id": "ufimsky",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-03-10-moskva-kapotnya",
+   "date": "2025-03-10",
+   "facility_id": "moskva-kapotnya",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "obekräftad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-03-10-stalnoy-kon",
+   "date": "2025-03-10",
+   "facility_id": "stalnoy-kon",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "obekräftad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-03-14-tuapse",
+   "date": "2025-03-14",
+   "facility_id": "tuapse",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign); Caspian Policy Center",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-03-16-moskva-kapotnya",
+   "date": "2025-03-16",
+   "facility_id": "moskva-kapotnya",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Caspian Policy Center",
+     "url": "https://www.caspianpolicy.org/research/security/live-map-of-russian-refineries-hit-ukrainian-drone-strikes-boost-caspian-energy",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-06-25-ufimsky",
+   "date": "2025-06-25",
+   "facility_id": "ufimsky",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-08-07-afipsky",
+   "date": "2025-08-07",
+   "facility_id": "afipsky",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-08-24-novatek-ust-luga",
+   "date": "2025-08-24",
+   "facility_id": "novatek-ust-luga",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-08-30-krasnodar",
+   "date": "2025-08-30",
+   "facility_id": "krasnodar",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-09-05-ryazan",
+   "date": "2025-09-05",
+   "facility_id": "ryazan",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-09-12-primorsk",
+   "date": "2025-09-12",
+   "facility_id": "primorsk",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-09-14-kirishi",
+   "date": "2025-09-14",
+   "facility_id": "kirishi",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-09-18-salavat",
+   "date": "2025-09-18",
+   "facility_id": "salavat",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-09-20-novokuibyshevsk",
+   "date": "2025-09-20",
+   "facility_id": "novokuibyshevsk",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-09-24-salavat",
+   "date": "2025-09-24",
+   "facility_id": "salavat",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-10-01-orsk",
+   "date": "2025-10-01",
+   "facility_id": "orsk",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Kyiv Independent",
+     "url": "https://kyivindependent.com/massive-russian-gas-plant-forced-to-suspend-gas-intake-following-ukrainian-drone-attack/",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-10-01-yaroslavl-yanos",
+   "date": "2025-10-01",
+   "facility_id": "yaroslavl-yanos",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-10-04-kirishi",
+   "date": "2025-10-04",
+   "facility_id": "kirishi",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-10-06-tuapse",
+   "date": "2025-10-06",
+   "facility_id": "tuapse",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-10-11-ufimsky",
+   "date": "2025-10-11",
+   "facility_id": "ufimsky",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-10-19-novokuibyshevsk",
+   "date": "2025-10-19",
+   "facility_id": "novokuibyshevsk",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-10-19-orenburg-gpz",
+   "date": "2025-10-19",
+   "facility_id": "orenburg-gpz",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Kyiv Independent/Reuters",
+     "url": "https://kyivindependent.com/massive-russian-gas-plant-forced-to-suspend-gas-intake-following-ukrainian-drone-attack/",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-10-23-ryazan",
+   "date": "2025-10-23",
+   "facility_id": "ryazan",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-11-02-tuapse",
+   "date": "2025-11-02",
+   "facility_id": "tuapse",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-11-15-ryazan",
+   "date": "2025-11-15",
+   "facility_id": "ryazan",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-11-21-saratov",
+   "date": "2025-11-21",
+   "facility_id": "saratov",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-11-29-afipsky",
+   "date": "2025-11-29",
+   "facility_id": "afipsky",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-11-29-cpc-yuzhnaya-ozereyevka",
+   "date": "2025-11-29",
+   "facility_id": "cpc-yuzhnaya-ozereyevka",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-12-12-yaroslavl-yanos",
+   "date": "2025-12-12",
+   "facility_id": "yaroslavl-yanos",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2025-12-17-slavyansk",
+   "date": "2025-12-17",
+   "facility_id": "slavyansk",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-02-11-volgograd",
+   "date": "2026-02-11",
+   "facility_id": "volgograd",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-02-12-ukhta",
+   "date": "2026-02-12",
+   "facility_id": "ukhta",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-02-24-ryazan",
+   "date": "2026-02-24",
+   "facility_id": "ryazan",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-03-02-sheskharis",
+   "date": "2026-03-02",
+   "facility_id": "sheskharis",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-03-08-kirishi",
+   "date": "2026-03-08",
+   "facility_id": "kirishi",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-03-12-tikhoretsk-lpds",
+   "date": "2026-03-12",
+   "facility_id": "tikhoretsk-lpds",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-03-14-afipsky",
+   "date": "2026-03-14",
+   "facility_id": "afipsky",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-03-22-primorsk",
+   "date": "2026-03-22",
+   "facility_id": "primorsk",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-03-22-ust-luga",
+   "date": "2026-03-22",
+   "facility_id": "ust-luga",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-03-25-primorsk",
+   "date": "2026-03-25",
+   "facility_id": "primorsk",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-03-25-ust-luga",
+   "date": "2026-03-25",
+   "facility_id": "ust-luga",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-03-26-kirishi",
+   "date": "2026-03-26",
+   "facility_id": "kirishi",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-03-27-ust-luga",
+   "date": "2026-03-27",
+   "facility_id": "ust-luga",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-03-29-ust-luga",
+   "date": "2026-03-29",
+   "facility_id": "ust-luga",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-03-31-ust-luga",
+   "date": "2026-03-31",
+   "facility_id": "ust-luga",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-04-01-novo-ufimsky",
+   "date": "2026-04-01",
+   "facility_id": "novo-ufimsky",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-04-05-kstovo-norsi",
+   "date": "2026-04-05",
+   "facility_id": "kstovo-norsi",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-04-05-primorsk",
+   "date": "2026-04-05",
+   "facility_id": "primorsk",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-04-06-sheskharis",
+   "date": "2026-04-06",
+   "facility_id": "sheskharis",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-04-16-tuapse",
+   "date": "2026-04-16",
+   "facility_id": "tuapse",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-04-18-syzran",
+   "date": "2026-04-18",
+   "facility_id": "syzran",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-04-18-vysotsk",
+   "date": "2026-04-18",
+   "facility_id": "vysotsk",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-04-20-tuapse",
+   "date": "2026-04-20",
+   "facility_id": "tuapse",
+   "featured": false,
+   "period": "earlier",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-04-28-tuapse",
+   "date": "2026-04-28",
+   "facility_id": "tuapse",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-04-29-perm",
+   "date": "2026-04-29",
+   "facility_id": "perm",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-05-01-tuapse",
+   "date": "2026-05-01",
+   "facility_id": "tuapse",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-05-03-primorsk",
+   "date": "2026-05-03",
+   "facility_id": "primorsk",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-05-05-kirishi",
+   "date": "2026-05-05",
+   "facility_id": "kirishi",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-05-07-perm",
+   "date": "2026-05-07",
+   "facility_id": "perm",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-05-13-taman",
+   "date": "2026-05-13",
+   "facility_id": "taman",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-05-15-ryazan",
+   "date": "2026-05-15",
+   "facility_id": "ryazan",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-05-17-moskva-kapotnya",
+   "date": "2026-05-17",
+   "facility_id": "moskva-kapotnya",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-05-20-kstovo-norsi",
+   "date": "2026-05-20",
+   "facility_id": "kstovo-norsi",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-05-21-syzran",
+   "date": "2026-05-21",
+   "facility_id": "syzran",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-05-23-sheskharis",
+   "date": "2026-05-23",
+   "facility_id": "sheskharis",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-05-26-tuapse",
+   "date": "2026-05-26",
+   "facility_id": "tuapse",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-05-30-saratov",
+   "date": "2026-05-30",
+   "facility_id": "saratov",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-06-01-volgograd",
+   "date": "2026-06-01",
+   "facility_id": "volgograd",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-06-02-ilsky",
+   "date": "2026-06-02",
+   "facility_id": "ilsky",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-06-02-novoshakhtinsk",
+   "date": "2026-06-02",
+   "facility_id": "novoshakhtinsk",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Euromaidan Press",
+     "url": "https://euromaidanpress.com/2026/06/03/ukraine-hit-novoshakhtinsk-oil-refinery-in-russia-with-same-weapon-that-sank-moskva-black-sea-fleet-flagship/",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-06-02-saratov",
+   "date": "2026-06-02",
+   "facility_id": "saratov",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-06-02-novokuibyshevsk",
+   "date": "2026-06-02",
+   "facility_id": "novokuibyshevsk",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-06-03-petersburg-oil-terminal",
+   "date": "2026-06-03",
+   "facility_id": "petersburg-oil-terminal",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-06-06-antipinsky",
+   "date": "2026-06-06",
+   "facility_id": "antipinsky",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-06-08-sheskharis",
+   "date": "2026-06-08",
+   "facility_id": "sheskharis",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-06-09-kuibyshev",
+   "date": "2026-06-09",
+   "facility_id": "kuibyshev",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-06-10-novokuibyshevsk",
+   "date": "2026-06-10",
+   "facility_id": "novokuibyshevsk",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-06-11-afipsky",
+   "date": "2026-06-11",
+   "facility_id": "afipsky",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-06-12-taneco",
+   "date": "2026-06-12",
+   "facility_id": "taneco",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-06-12-moskva-kapotnya",
+   "date": "2026-06-12",
+   "facility_id": "moskva-kapotnya",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-06-13-taman",
+   "date": "2026-06-13",
+   "facility_id": "taman",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-06-16-moskva-kapotnya",
+   "date": "2026-06-16",
+   "facility_id": "moskva-kapotnya",
+   "featured": true,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-06-18-moskva-kapotnya",
+   "date": "2026-06-18",
+   "facility_id": "moskva-kapotnya",
+   "featured": true,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-06-20-port-kavkaz",
+   "date": "2026-06-20",
+   "facility_id": "port-kavkaz",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-06-21-antipinsky",
+   "date": "2026-06-21",
+   "facility_id": "antipinsky",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-06-24-kstovo-norsi",
+   "date": "2026-06-24",
+   "facility_id": "kstovo-norsi",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-06-24-orenburg-gpz",
+   "date": "2026-06-24",
+   "facility_id": "orenburg-gpz",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Kyiv Post",
+     "url": "https://www.kyivpost.com/post/78850",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-06-24-slavyansk",
+   "date": "2026-06-24",
+   "facility_id": "slavyansk",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-06-24-yaroslavl-yanos",
+   "date": "2026-06-24",
+   "facility_id": "yaroslavl-yanos",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-06-25-ufimsky",
+   "date": "2026-06-25",
+   "facility_id": "ufimsky",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-06-28-slavyansk",
+   "date": "2026-06-28",
+   "facility_id": "slavyansk",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-06-28-yaroslavl-yanos",
+   "date": "2026-06-28",
+   "facility_id": "yaroslavl-yanos",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-06-30-slavyansk",
+   "date": "2026-06-30",
+   "facility_id": "slavyansk",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-07-01-ufimsky",
+   "date": "2026-07-01",
+   "facility_id": "ufimsky",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-07-02-kstovo-norsi",
+   "date": "2026-07-02",
+   "facility_id": "kstovo-norsi",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-07-04-petersburg-oil-terminal",
+   "date": "2026-07-04",
+   "facility_id": "petersburg-oil-terminal",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-07-06-omsk",
+   "date": "2026-07-06",
+   "facility_id": "omsk",
+   "featured": true,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-07-06-yaroslavl-yanos",
+   "date": "2026-07-06",
+   "facility_id": "yaroslavl-yanos",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-07-06-ust-luga",
+   "date": "2026-07-06",
+   "facility_id": "ust-luga",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-07-06-vysotsk",
+   "date": "2026-07-06",
+   "facility_id": "vysotsk",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-07-07-taif-nk",
+   "date": "2026-07-07",
+   "facility_id": "taif-nk",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-07-07-taneco",
+   "date": "2026-07-07",
+   "facility_id": "taneco",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-07-08-saratov",
+   "date": "2026-07-08",
+   "facility_id": "saratov",
+   "featured": true,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-07-08-cherkassy-lpds",
+   "date": "2026-07-08",
+   "facility_id": "cherkassy-lpds",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-07-09-kirishi",
+   "date": "2026-07-09",
+   "facility_id": "kirishi",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-07-09-tvernefteprodukt",
+   "date": "2026-07-09",
+   "facility_id": "tvernefteprodukt",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-07-09-yugnefteprodukt",
+   "date": "2026-07-09",
+   "facility_id": "yugnefteprodukt",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-07-10-ilsky",
+   "date": "2026-07-10",
+   "facility_id": "ilsky",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-07-10-taganrog-terminal",
+   "date": "2026-07-10",
+   "facility_id": "taganrog-terminal",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-07-13-syzran",
+   "date": "2026-07-13",
+   "facility_id": "syzran",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-07-13-yugnefteprodukt",
+   "date": "2026-07-13",
+   "facility_id": "yugnefteprodukt",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-07-14-afipsky",
+   "date": "2026-07-14",
+   "facility_id": "afipsky",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-07-14-salavat",
+   "date": "2026-07-14",
+   "facility_id": "salavat",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-07-17-yaroslavl-yanos",
+   "date": "2026-07-17",
+   "facility_id": "yaroslavl-yanos",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-07-18-noginsk-depot",
+   "date": "2026-07-18",
+   "facility_id": "noginsk-depot",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-07-18-yugnefteprodukt",
+   "date": "2026-07-18",
+   "facility_id": "yugnefteprodukt",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-07-25-antipinsky",
+   "date": "2026-07-25",
+   "facility_id": "antipinsky",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-07-28-antipinsky",
+   "date": "2026-07-28",
+   "facility_id": "antipinsky",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-07-29-perm",
+   "date": "2026-07-29",
+   "facility_id": "perm",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-07-29-ryazan",
+   "date": "2026-07-29",
+   "facility_id": "ryazan",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-07-31-taneco",
+   "date": "2026-07-31",
+   "facility_id": "taneco",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-07-31-volgograd",
+   "date": "2026-07-31",
+   "facility_id": "volgograd",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-08-02-saratov",
+   "date": "2026-08-02",
+   "facility_id": "saratov",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-08-02-ryazan",
+   "date": "2026-08-02",
+   "facility_id": "ryazan",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": true,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-08-04-syzran",
+   "date": "2026-08-04",
+   "facility_id": "syzran",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-08-06-novo-ufimsky",
+   "date": "2026-08-06",
+   "facility_id": "novo-ufimsky",
+   "featured": true,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-08-06-yaroslavl-yanos",
+   "date": "2026-08-06",
+   "facility_id": "yaroslavl-yanos",
+   "featured": true,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-08-08-ilsky",
+   "date": "2026-08-08",
+   "facility_id": "ilsky",
+   "featured": true,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-08-10-taneco",
+   "date": "2026-08-10",
+   "facility_id": "taneco",
+   "featured": true,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-08-10-antipinsky",
+   "date": "2026-08-10",
+   "facility_id": "antipinsky",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-08-11-orsk",
+   "date": "2026-08-11",
+   "facility_id": "orsk",
+   "featured": true,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Moscow Times",
+     "url": "https://www.themoscowtimes.com/2026/08/13/orsk-refinery-shutters-for-6-months-after-ukrainian-attack-a93489",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-08-11-komsomolsk",
+   "date": "2026-08-11",
+   "facility_id": "komsomolsk",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-08-13-salavat",
+   "date": "2026-08-13",
+   "facility_id": "salavat",
+   "featured": true,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-08-19-ufimsky",
+   "date": "2026-08-19",
+   "facility_id": "ufimsky",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-08-20-taneco",
+   "date": "2026-08-20",
+   "facility_id": "taneco",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-08-21-perm",
+   "date": "2026-08-21",
+   "facility_id": "perm",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-08-21-volgograd",
+   "date": "2026-08-21",
+   "facility_id": "volgograd",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-08-22-novokuibyshevsk",
+   "date": "2026-08-22",
+   "facility_id": "novokuibyshevsk",
+   "featured": true,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-08-25-afipsky",
+   "date": "2026-08-25",
+   "facility_id": "afipsky",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Ukrainska Pravda / Ukrainas generalstab",
+     "url": "https://www.pravda.com.ua/eng/news/2026/08/25/8050204/",
+     "partisan": true,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-08-25-novoshakhtinsk",
+   "date": "2026-08-25",
+   "facility_id": "novoshakhtinsk",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-08-25-astrakhan-gpz",
+   "date": "2026-08-25",
+   "facility_id": "astrakhan-gpz",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Ukrainska Pravda / Ukrainas generalstab",
+     "url": "https://www.pravda.com.ua/eng/news/2026/08/25/8050204/",
+     "partisan": true,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-08-26-kstovo-norsi",
+   "date": "2026-08-26",
+   "facility_id": "kstovo-norsi",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Wikipedia (Deep strike campaign)",
+     "url": "https://en.wikipedia.org/wiki/Deep_strike_campaign",
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-08-28-kstovo-norsi",
+   "date": "2026-08-28",
+   "facility_id": "kstovo-norsi",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-08-28-yaroslavl-yanos",
+   "date": "2026-08-28",
+   "facility_id": "yaroslavl-yanos",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-08-30-kirishi",
+   "date": "2026-08-30",
+   "facility_id": "kirishi",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-09-01-novatek-ust-luga",
+   "date": "2026-09-01",
+   "facility_id": "novatek-ust-luga",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Euromaidan Press / Ukrainas generalstab, HUR",
+     "url": "https://euromaidanpress.com/2026/09/02/ukraine-confirms-strike-novatek-ust-luga-fuel-plant/",
+     "partisan": true,
+     "damage": null
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-09-06-ryazan",
+   "date": "2026-09-06",
+   "facility_id": "ryazan",
+   "featured": true,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-09-08-saratov",
+   "date": "2026-09-08",
+   "facility_id": "saratov",
+   "featured": true,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-09-10-moskva-kapotnya",
+   "date": "2026-09-10",
+   "facility_id": "moskva-kapotnya",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-09-11-saratov",
+   "date": "2026-09-11",
+   "facility_id": "saratov",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Reuters via Moscow Times",
+     "url": "https://www.themoscowtimes.com/2026/09/16/syzran-and-saratov-oil-refineries-halt-operations-after-drone-attacks-sources-say-a93726",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-09-13-slavyansk",
+   "date": "2026-09-13",
+   "facility_id": "slavyansk",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-09-15-syzran",
+   "date": "2026-09-15",
+   "facility_id": "syzran",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Reuters via Moscow Times",
+     "url": "https://www.themoscowtimes.com/2026/09/16/syzran-and-saratov-oil-refineries-halt-operations-after-drone-attacks-sources-say-a93726",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-09-16-saratov",
+   "date": "2026-09-16",
+   "facility_id": "saratov",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-09-17-yaroslavl-yanos",
+   "date": "2026-09-17",
+   "facility_id": "yaroslavl-yanos",
+   "featured": true,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-09-20-moskva-kapotnya",
+   "date": "2026-09-20",
+   "facility_id": "moskva-kapotnya",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "Kyiv Independent; Rigzone/Bloomberg; Al Jazeera",
+     "url": "https://kyivindependent.com/russia-says-dozens-of-ukrainian-drones-targeted-moscow-as-broader-attack-hit-multiple-regions/",
+     "partisan": false,
+     "damage": "skada rapporterad"
+    }
+   ],
+   "notes": []
+  },
+  {
+   "id": "2026-09-22-samara-region",
+   "date": "2026-09-22",
+   "facility_id": "samara-region",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-09-25-perm",
+   "date": "2026-09-25",
+   "facility_id": "perm",
+   "featured": true,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-09-26-ilsky",
+   "date": "2026-09-26",
+   "facility_id": "ilsky",
+   "featured": true,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-10-02-volgograd",
+   "date": "2026-10-02",
+   "facility_id": "volgograd",
+   "featured": true,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-10-02-samara-region",
+   "date": "2026-10-02",
+   "facility_id": "samara-region",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-10-08-omsk",
+   "date": "2026-10-08",
+   "facility_id": "omsk",
+   "featured": true,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-10-09-ukhta",
+   "date": "2026-10-09",
+   "facility_id": "ukhta",
+   "featured": true,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-10-15-ryazan",
+   "date": "2026-10-15",
+   "facility_id": "ryazan",
+   "featured": true,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-10-18-petersburg-oil-terminal",
+   "date": "2026-10-18",
+   "facility_id": "petersburg-oil-terminal",
+   "featured": true,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [],
+   "notes": []
+  },
+  {
+   "id": "2026-10-20-nikolskoye-lpds",
+   "date": "2026-10-20",
+   "facility_id": "nikolskoye-lpds",
+   "featured": false,
+   "period": "recent",
+   "date_doubtful": false,
+   "secondary_sources": [
+    {
+     "name": "News reports, 20 Oct (not in the Meltwater sample)",
+     "url": null,
+     "partisan": false,
+     "damage": null
+    }
+   ],
+   "notes": [
+    "Druzhba pipeline pumping station. Location shown at region level only."
+   ]
+  }
+ ]
+}
