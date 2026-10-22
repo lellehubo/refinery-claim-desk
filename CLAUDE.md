@@ -27,7 +27,7 @@ This page shows how one drone strike is described by different sources: who said
 - `data/facilities.json` → `facilities[]`: `id, name, type, region, lat, lon, coord_quality, capacity_mt_yr, control_group, indistinguishable_from`
 - `data/events.json` → `events[]`: `id, date, facility_id, featured, period ("recent" | "earlier"), date_doubtful, secondary_sources[{name,url,partisan,damage}], notes[]`
 - `data/claims.json` → `claims[]`: `id, event_id, time_utc, time_reliable, platform, sender, sender_type, cites, url, quote, quote_en, lens_terms[]`
-- `data/firms.json` → `anomalies[]`: `facility_id, date, flag, max_frp_mw, z, days, note` (may be missing)
+- `data/firms.json` → `anomalies[]`: `facility_id, date, start, end, flag ("strong" | "weak" | "intensity-only"), max_frp_mw, z, days, note`; `no_data[]`: site ids with no satellite data. Never say "no anomaly" for those. (The file may be missing.)
 
 `sender_type` values and display names: `ua_official` Ukrainian official · `ru_official` Russian official (relayed) · `ru_channel` Russian channel ·
 `monitoring` Monitoring channel · `independent_media` Independent media · `industry` Reuters / industry sources.

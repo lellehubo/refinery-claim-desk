@@ -60,6 +60,7 @@ mark{background:#f59e0b33;color:#fde68a;border-bottom:2px dotted #f59e0b;padding
 .copy{margin-top:8px;background:var(--accent);color:#0b1220;border:0;border-radius:8px;padding:6px 14px;font:inherit;font-weight:600;cursor:pointer}
 footer{padding:0 24px 22px;color:var(--muted);font-size:14px}
 footer b{color:var(--text);font-weight:500}
+.osm-dark{filter:invert(1) hue-rotate(180deg) brightness(.85) contrast(.9)}
 .leaflet-container{background:#0e1626;font-family:Jost,sans-serif}
 .leaflet-popup-content-wrapper,.leaflet-popup-tip{background:var(--panel2);color:var(--text)}
 @media (max-width:900px){
@@ -113,7 +114,7 @@ const GLOSS = [
   [/объект/i,'"facility / object": unspecified'],
 ];
 const S = {sel:null, hide:new Set(), refOnly:false, earlier:true};
-let F={}, EV=[], CL={}, HEAT=[], map=null, layers={};
+let F={}, EV=[], CL={}, HEAT=[], NODATA=new Set(), map=null, layers={};
 
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const fmtDate = d => new Date(d+'T12:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'});
@@ -136,7 +137,8 @@ function analyse(e){
   if(e.date_doubtful) tags.push('Date doubtful');
   if(o.has('industry') || (e.secondary_sources||[]).some(s=>s.damage)) tags.push('Outage reported');
   if(f.coord_quality==='region') tags.push('Location approximate');
-  const near = h => h.facility_id===e.facility_id && new Date(h.start)-864e5 <= new Date(e.date) && new Date(h.end)+864e5 >= new Date(e.date);
+  const T = d => new Date(d+'T00:00:00Z').getTime(), te = T(e.date);
+  const near = h => h.facility_id===e.facility_id && T(h.start)-864e5 <= te && T(h.end)+864e5 >= te;
   const heat = HEAT.find(h => near(h) && h.flag==='strong');
   const flare = !heat && HEAT.find(h => near(h) && h.flag!=='strong');
   return {status:st, origins:o, groups:g, n:all.length, tags, heat, flare};
@@ -151,6 +153,7 @@ async function load(n){ try{ const r=await fetch(BASE+n); if(!r.ok) throw 0; ret
   cl.claims.forEach(c=>(CL[c.event_id] ||= []).push(c));
   Object.values(CL).forEach(a=>a.sort((x,y)=>x.time_utc.localeCompare(y.time_utc)));
   HEAT = (fi && fi.anomalies) || [];
+  NODATA = new Set((fi && fi.no_data) || []);
   EV = ev.events.map(e=>({...e, ...analyse(e)}));
   buildMap(); render();
 })();
@@ -196,8 +199,13 @@ function renderList(){
 function buildMap(){
   if(typeof L==='undefined'){ const m=document.getElementById('map'); m.classList.add('failed'); m.textContent='Map unavailable. The list works without it.'; return; }
   map = L.map('map',{zoomControl:true, attributionControl:true}).fitBounds([[43,30],[62,75]]);
-  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}',{maxZoom:16,
+  // Esri dark tiles; if they fail, fall back to OpenStreetMap darkened with CSS
+  const esri = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}',{maxZoom:16,
     attribution:'Tiles &copy; Esri'}).addTo(map);
+  let errs=0, switched=false;
+  esri.on('tileerror',()=>{ if(switched || ++errs<3) return; switched=true; map.removeLayer(esri);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:16,className:'osm-dark',
+      attribution:'&copy; OpenStreetMap contributors'}).addTo(map); });
   setTimeout(()=>{ map.invalidateSize(); map.fitBounds([[43,30],[62,75]]); }, 200);
   layers.old = L.layerGroup().addTo(map); layers.heat = L.layerGroup().addTo(map); layers.rec = L.layerGroup().addTo(map);
 }
@@ -301,8 +309,9 @@ function renderDetail(){
     <div style="margin-top:8px"><span class="chip" style="background:${STATUS[e.status].c}">${e.status}</span> ${tagHtml(e)}</div>
     <div class="why">${STATUS[e.status].why} ${e.n?`${e.n} posts, ${e.groups.size} independent origin group${e.groups.size===1?'':'s'}: ${[...e.groups].map(g=>g==='russia'?'Russian side (officials and channels)':ORIGIN[g]).join(', ')}.`:''}</div>`;
   if(e.flare && !e.heat) h+=`<div class="box"><h3>Satellite</h3>Intensity spike at known flare locations on ${fmtDate(e.flare.date)} (NASA FIRMS). ${esc(e.flare.note)} Not a fire signal on its own.</div>`;
-  if(HEAT.length && !e.heat && !e.flare && F[e.facility_id].lat!=null) h+=`<div class="box"><h3>Satellite</h3>No heat anomaly detected around this date. Clouds, smoke or satellite timing can hide a fire, so this is not evidence that nothing happened.</div>`;
-  if(e.heat) h+=`<div class="box"><h3>Satellite</h3>Satellite heat anomaly consistent with fire (NASA FIRMS, VIIRS 375 m) on ${fmtDate(e.heat.date)}${e.heat.max_frp_mw?`, peak ${Math.round(e.heat.max_frp_mw)} MW`:''}${e.heat.days>1?`, lasting ${e.heat.days} days`:''}. ${esc(e.heat.note||'')} Not proof of a strike.</div>`;
+  if(HEAT.length && !e.heat && !e.flare && F[e.facility_id].lat!=null && NODATA.has(e.facility_id)) h+=`<div class="box"><h3>Satellite</h3>No usable satellite data for this site in this run.</div>`;
+  else if(HEAT.length && !e.heat && !e.flare && F[e.facility_id].lat!=null) h+=`<div class="box"><h3>Satellite</h3>No heat anomaly detected around this date. Clouds, smoke or satellite timing can hide a fire, so this is not evidence that nothing happened.</div>`;
+  if(e.heat) h+=`<div class="box"><h3>Satellite</h3>Satellite heat anomaly consistent with fire (NASA FIRMS, VIIRS 375 m) on ${fmtDate(e.heat.date)}${e.heat.max_frp_mw?`, peak ${Math.round(e.heat.max_frp_mw)} MW`:''}${e.heat.days>1?`, lasting ${e.heat.days} days`:''}. ${esc(e.heat.note||'')} Not proof of a strike. NASA FIRMS, NOAA-20 satellite only.</div>`;
   if(cl.length){
     h+=`<div class="box"><h3>Claim trail</h3>${trailSvg(cl)}<div class="reg">Hours from the first Telegram or X post. Hollow dots: news-site time, approximate.</div></div>`;
     h+=`<div class="box"><h3>Publication line</h3><div class="pub" id="pub">${esc(pubLine(e))}</div><button class="copy" id="copy">Copy line</button></div>`;
