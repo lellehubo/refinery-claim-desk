@@ -36,7 +36,7 @@ This page shows how one drone strike is described by different sources: who said
 - One self-contained `index.html` (inline CSS and JS). Load JSON with `fetch('data/...')`. English only.
 - Dark first, readable on a projector: background `#0b1220`, panels `#121a2b`, text `#e8edf5`, muted `#9aa7bd`. Font: Jost from Google Fonts. Base size 17px.
 - No red and no grey-red. Status colours: Both sides `#2dd4bf` · Corroborated `#60a5fa` · Single origin `#fbbf24` · Tracker only `#a78bfa` · Target unclear `#f472b6`.
-- Map: Leaflet 1.9.4 from unpkg, CARTO dark tiles. **The list must still work if the map fails to load.**
+- Map: Leaflet 1.9.4 from unpkg. Tiles (no key needed): `https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}`, attribution "Tiles &copy; Esri". Start with `fitBounds([[43,30],[62,75]])`. **The list must still work if the map fails to load.**
 - "recent" events are bright circles sized by number of claims. "earlier" events are tiny faint dots in the background, hidden from the list, toggled by "Show earlier strikes".
 - Header: "The Claim Desk", subtitle "Strikes on Russian oil infrastructure, 21 Apr to 21 Oct 2026 · Built live with Claude Code · Public sources only".
 - Footer: "Every row is a claim, not a fact. Status reflects independent origins, not volume."

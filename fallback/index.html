@@ -195,9 +195,10 @@ function renderList(){
 
 function buildMap(){
   if(typeof L==='undefined'){ const m=document.getElementById('map'); m.classList.add('failed'); m.textContent='Map unavailable. The list works without it.'; return; }
-  map = L.map('map',{zoomControl:true, attributionControl:true}).setView([54,50],4);
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{subdomains:'abcd',maxZoom:12,
-    attribution:'&copy; OpenStreetMap &copy; CARTO'}).addTo(map);
+  map = L.map('map',{zoomControl:true, attributionControl:true}).fitBounds([[43,30],[62,75]]);
+  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}',{maxZoom:16,
+    attribution:'Tiles &copy; Esri'}).addTo(map);
+  setTimeout(()=>{ map.invalidateSize(); map.fitBounds([[43,30],[62,75]]); }, 200);
   layers.old = L.layerGroup().addTo(map); layers.heat = L.layerGroup().addTo(map); layers.rec = L.layerGroup().addTo(map);
 }
 
